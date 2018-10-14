@@ -1,3 +1,7 @@
+extern crate rstd;
+use rstd::prelude::*;
+
 fn main() {
-    println!("Hello, world!");
+	let jmeno: String = prompt("zadej svoje jméno");
+	println!("tvoje jméno je {}", jmeno);
 }
