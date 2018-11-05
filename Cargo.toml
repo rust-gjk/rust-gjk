@@ -5,4 +5,4 @@ authors = ["Lukáš Hozda <luk.hozda@gmail.com>"]
 edition = "2018"
 
 [dependencies]
-rstd = "0.2"
+rstd = "0.3"
