@@ -2,30 +2,14 @@ extern crate rstd;
 use rstd::prelude::*;
 
 fn main() {
-	let mut vysledek: i64 = 0;	
+	let mut i: i64 = 0;
+	let delitel: i64 = prompt("zadejte dělitele");
 
 	loop {
-		let vstup: String = read();
-		let seznam = vstup.split_nonempty(' ');
-
-		match seznam[0].as_str() {
-			"+" => {
-				vysledek += seznam[1].parse::<i64>().unwrap();
-				println!("{}", vysledek);
-			},
-			"-" => {
-				vysledek += seznam[1].parse::<i64>().unwrap();
-				println!("{}", vysledek);
-			},
-			"*" => {
-				vysledek += seznam[1].parse::<i64>().unwrap();
-				println!("{}", vysledek);
-			},
-			"/" => {
-				vysledek += seznam[1].parse::<i64>().unwrap();
-				println!("{}", vysledek);
-			},
-			x => println!("neznamy"),
+		if i == 100 { break; }
+		if i % delitel == 0 {
+			println!("{}", i);
 		}
+		i += 1;
 	}
 }
